@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db5b52d45d.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section id="search">
+    <div class="nav__bar--img">
+        <nav class="nav__bar--container row">
+            <div class="nav__logo">
+                <h1>Logo</h1>
+            </div>
+            <ul class="nav__links">
+                <li><a href="#" class="nav__link link__hover--effect">Home</a></li>
+                <li><a href="#" class="nav__link link__hover--effect">Find your Movie</a></li>
+                <li><a href="#" class="nav__link contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search__container">
+            <h1 class="title">Browse our Movies</h1>
+            <div class="search__input--container">
+                <input  id="search-input" type="text" class="search__input" placeholder="Search for a movie...">
+                <div class="search__icon--wrapper">
+                    <i class="fa-solid fa-magnifying-glass click click-movie"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="search__results">
+        <h1 class="search__title">
+            Search Results for:<br><span id="search-term"></span>
+        </h1>
+        <div class="search__results--container">
+            <div class="search__result--container">
+                <div class="search__result--img">
+                    <img src="" alt="">
+                </div>
+                <div class="search__result--title">
+                    <h1 class="movie__title"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+</html>
