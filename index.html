@@ -16,8 +16,8 @@
                 <h1>Logo</h1>
             </div>
             <ul class="nav__links">
-                <li><a href="#" class="nav__link link__hover--effect">Home</a></li>
-                <li><a href="#" class="nav__link link__hover--effect">Find your Movie</a></li>
+                <li><a href="#search" class="nav__link link__hover--effect">Home</a></li>
+                <li><a href="#search" class="nav__link link__hover--effect">Find your Movie</a></li>
                 <li><a href="#" class="nav__link contact">Contact</a></li>
             </ul>
         </nav>
@@ -33,9 +33,21 @@
     </div>
     </section>
     <section id="search__results">
-        <h1 class="search__title">
-            Search Results for:<br><span id="search-term"></span>
-        </h1>
+        <div class="search__top--container">
+            <h1 class="search__title">
+                Search Results for:<br><span id="search-term"></span>
+            </h1>
+            <div class="search__filter">
+                <label for="filter-select">Filter by:</label>
+                <select id="filter-select" onchange="filterMovies(event)">
+                    <option value="" disabled selected>Sort</option>
+                    <option value="alpha">A - Z</option>
+                    <option value="reverse">Z - A</option>
+                    <option value="newest">Newest to Oldest</option>
+                    <option value="oldest">Oldest to Newest</option>
+                </select>
+            </div>
+        </div>
         <div class="search__results--container">
             <div class="search__result--container">
                 <div class="search__result--img">
@@ -47,6 +59,15 @@
             </div>
         </div>
     </section>
+    <footer>
+        <ul class="footer__links row">
+            <li><a href="#search" class="nav__link link__hover--effect">Home</a></li>
+            <li><a href="#search" class="nav__link link__hover--effect">Find your Movie</a></li>
+            <li><a href="#" class="nav__link link__hover--effect">Contact</a></li>
+        </ul>
+        <h1 class="footer__logo">Logo</h1>
+        <p class="copy-right">&copy; 2024 Movie Browser. All rights reserved.</p>
+    </footer>
 <script src="index.js"></script>
 </body>
 </html>
