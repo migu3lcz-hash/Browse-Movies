@@ -280,6 +280,10 @@ footer {
     .search__results--container {
         justify-content: center;
     }
+
+    .footer__links {
+        width: 70%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -306,5 +310,13 @@ footer {
     }
     .search__result--container {
         max-width: 350px;
+    }
+
+    .footer__links {
+        width: 90%;
+    }
+
+    .contact {
+        padding: 10px 20px;
     }
 }
